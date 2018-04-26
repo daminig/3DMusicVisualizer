@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/HW2.unity
+- path: Assets/MR_Music_Visualizer.unity
   isLoaded: 1
   isActive: 1
