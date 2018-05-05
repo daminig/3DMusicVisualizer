@@ -39,6 +39,8 @@ GameObject:
   - component: {fileID: 222485297183863742}
   - component: {fileID: 114516150000606126}
   - component: {fileID: 114950560289966552}
+  - component: {fileID: 65339231123088506}
+  - component: {fileID: 114371955471352972}
   m_Layer: 0
   m_Name: DirectoryButton
   m_TagString: Untagged
@@ -46,6 +48,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &65339231123088506
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1781446219088990}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 50, y: 50, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114270854511137598
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -73,6 +87,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114371955471352972
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1781446219088990}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3bba7b19efcf7d48870e600ca7c78e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114516150000606126
 MonoBehaviour:
   m_ObjectHideFlags: 1
