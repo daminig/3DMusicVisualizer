@@ -18,11 +18,11 @@ public class ClickableUIItems : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Component[] test = uielement.gameObject.GetComponentsInChildren (typeof(Button), false);
+		Component[] buttons = uielement.gameObject.GetComponentsInChildren (typeof(Button), false);
 
-		for (int i = 0; i < test.Length; i++) {
-			if (test[i].gameObject.GetComponent<BoxCollider> () == null) {  //To check if already has BoxCollider
-				MakeClickable (test[i].gameObject);
+		for (int i = 0; i < buttons.Length; i++) {
+			if (buttons[i].gameObject.GetComponent<BoxCollider> () == null) {  //To check if already has BoxCollider
+				MakeClickable (buttons[i].gameObject);
 			}
 		}
 	}

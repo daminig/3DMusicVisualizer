@@ -6,6 +6,10 @@ public class VRUIItem : MonoBehaviour
     private BoxCollider boxCollider;
     private RectTransform rectTransform;
 
+	void Update(){
+		ValidateCollider ();
+	}
+
     private void OnEnable()
     {
         ValidateCollider();
@@ -26,6 +30,6 @@ public class VRUIItem : MonoBehaviour
             boxCollider = gameObject.AddComponent<BoxCollider>();
         }
 
-        boxCollider.size = rectTransform.sizeDelta;
+		boxCollider.size = (Vector3) rectTransform.sizeDelta;
     }
 }
